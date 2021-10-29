@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Zhuka</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+
+
+	<!-- for-mobile-apps -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 
+	<meta name="keywords" content="Ultra Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+			function hideURLbar(){ window.scrollTo(0,1); } </script>
+    
+
+	<!-- //for-mobile-apps -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" /> -->
+
+</head>
+	
+<body>	
+<!-- PRINCIPAL -->
+<div class="principal">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid menu">
+            <a class="navbar-brand logoNav" href="#"><img src="./imagenes/logo/logo-sin-fondo.png"  height="80px" id="logoZhuka"></a>
+            <button class="navbar-toggler" id="boton" onclick="ocultarMensajeBanner()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/index.html#an_nosotros">NOSOTROS</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PRODUCTOS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="paginas/remeras.html">Remeras</a></li>
+                    <li><a class="dropdown-item" href="paginas/buzos.html" >Buzos</a></li>
+                    <li><a class="dropdown-item" href="paginas/gorras.html" >Gorras</a></li>
+                    <li><a class="dropdown-item" href="paginas/barbijos.html" >Barbijos</a></li>
+
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="/index.html#an_contacto">CONTACTO</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2"  type="text" id="buscador" placeholder="Buscar productos" aria-label="Buscar">
+                <button  id="btnBuscarProductos">Buscar</button>                 
+            </form>
+            </div>
+        </div>
+    </nav>            
+</div>
+	 
+<div>   
+    <div id="carouselBanner" class="carousel carousel-dark slide" data-bs-ride="carousel"  style="position: relative;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselBanner" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner" > 
+          <div class="carousel-item active" data-bs-interval="3000" >
+            <img src="imagenes/banners/packaging.jpg" class="d-block w-100" alt="Zhuka">           
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="imagenes/banners/buzotexto.png" class="d-block w-100" alt="Buzos">             
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="imagenes/banners/gorratexto.png" class="d-block w-100" alt="Gorras">             
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="imagenes/banners/barbijotexto.png" class="d-block w-100" alt="Barbijos">            
+          </div>
+        </div>       
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+      <div id="textosBanners">
+        <div class="subtext_banner1">IMPRESI&Oacute;N DIGITAL</div>
+        <div class="text_banner1 text-left">
+            Estampamos tus prendas con diseños perzonalizados 
+            <div class="link_banner1">
+                <label class="label_banner1"></label>
+                <a href="https://api.whatsapp.com/send?phone=542804832617" target="_blank" rel="noreferrer noopener" style="color: white;" aria-label="Whatsapp"><i>CONSULTAR</i></a>
+
+            </div>
+        </div>
+    </div>
+</div>	  
+<!-- //PRINCIPAL -->
+
+
+<!-- NOSOTROS -->
+<a name="an_nosotros">
+	<div class="about"> 
+		<div class="container-fluid" >
+			<div class="col-12 about-grid" > 
+                <div class="row">
+                    <div class="col-12 about-grid-left" > 
+                        <div class="titulo_q">¿Quienes somos?</div>
+                    </div>	
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 about-grid-center" style="padding-top: 2rem;"> 
+                        <div class="texto_q"><strong>“Zhuka”</strong> en la tradición budista se usa para describir el tipo más profundo de <strong>Felicidad.</strong><br>
+                        Es la certeza que nos permite decir:<br><strong>«No importa lo que la vida me presente, puedo lidiar con eso».</strong><br>
+                        Cuando esa confianza está ahí, nos sentimos increíblemente bien!<br>
+                        Eso buscamos con este emprendimiento familiar, dar la confianza con nuestra ropa  y acompañar a nuestros clientes en la búsqueda del diseño correcto para su prenda.<br>
+                        También contamos con <strong>diseños exclusivos!</strong></div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 about-grid-right text-center" style="padding-top: 2rem;">
+                        <img src="imagenes/remera_dale una mas.jpg" alt=""  width="600px" id="remeraNosotros"/>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+</a>	
+<!-- //NOSOTROS -->
+
+
+<!-- PRODUCTOS -->
+<a name="an_productos">
+	<div class="about"  style="padding-top: 6rem;"> 
+		<div class="container-fluid">
+			<div class="row" > 
+				<div class="col-12"> 
+					<div class="titulo_q">Diseños exclusivos</div>
+				</div>	
+				<div class="col-12"> 
+					<div class="container-fluid">				 
+						<div class="row ">
+							<div class="col-sm-6 col-md-3" style="padding-top: 3.5rem; ">
+                                <div class="card conLink" onclick="verMasRemeras()" >
+                                    <img src="imagenes/categorias/remeras.jpg" class="card-img-top "  alt="Remeras">
+                                    <div class="card-body" style="position: relative;">
+                                      <h5 class="card-title welcome-titulo">Remeras</h5>
+                                      <div class="btn btn-primary welcome-vermas"  >VER M&Aacute;S</div>
+                                    </div>
+                                </div>
+                                
+							</div>
+							<div class="col-sm-6 col-md-3" style="padding-top: 3.5rem;">
+                                <div class="card conLink" onclick="verMasBuzos()" >
+                                    <img src="imagenes/categorias/buzos.jpg" class="card-img-top" alt="Buzos" > 
+                                    <div class="card-body" >
+                                      <h5 class="card-title welcome-titulo">Buzos</h5>
+                                      <div class="btn btn-primary welcome-vermas" >VER M&Aacute;S</div>
+                                    </div>
+                                  </div>
+							</div>
+							<div class="col-sm-6 col-md-3" style="padding-top: 3.5rem;">
+                                <div class="card conLink" onclick="verMasGorras()" >
+                                    <img src="imagenes/categorias/gorras.jpg" class="card-img-top" alt="Gorras" >
+                                    <div class="card-body">
+                                      <h5 class="card-title welcome-titulo">Gorras</h5>
+                                      <div class="btn btn-primary welcome-vermas"  >VER M&Aacute;S</div>
+                                    </div>
+                                </div>                               
+							</div>
+							<div class="col-sm-6 col-md-3" style="padding-top: 3.5rem;" >
+                                <div class="card conLink" onclick="verMasBarbijos()" >
+                                    <img src="imagenes/categorias/barbijos.jpg" class="card-img-top" alt="Barbijos"  >
+                                    <div class="card-body">
+                                      <h5 class="card-title welcome-titulo">Barbijos</h5>
+                                      <div class="btn btn-primary welcome-vermas" >VER M&Aacute;S</div>
+                                    </div>
+                                </div>  
+							</div>
+							 
+						</div> 
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+ 
+</a>
+<!-- /PRODUCTOS -->
+
+<!-- CONTACTO -->
+<a name="an_contacto">
+    <div class="about" style="padding-top: 6rem;">
+        <div class="container-fluid">	             		
+            <div class="contact-main row contact-top">
+                <div class="col-sm-12 col-md-6  contact-top-left">
+                    <div>	
+                        <div> 
+                            <div class="titulo_q">Contactanos</div>
+                        </div>	
+                        <div style="padding-top: 3rem; padding-left: 1rem;"> 
+                            <div class="texto_co">Contacto: Whatssap : 2804832617</div>
+                        </div>	
+                        <div style="padding-left: 1rem;">  
+                            <div class="texto_co">Direccion: Rawson, Chubut, Argentina</div>
+                        </div>	
+                        <div style="padding-top: 3rem;"> 
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23229.913007916002!2d-65.12064374911157!3d-43.29878458123036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe01571fc31a9637%3A0x57c6b22b6483050c!2sRawson%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1631025002882!5m2!1ses-419!2sar" width="340" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>	
+                    </div>	
+                </div>
+                <div id="app" class="col-sm-12 col-md-6  contact-top-right">
+                    <div class="contact-textarea">
+                        <form>
+                            <span class="contact_sub" >Nombre y Apellido</span>
+                            <input class="inputContacto" type="text" value="Nombre" v-model="from_name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}"/>
+                            <span class="contact_sub">Tel&eacute;fono</span>
+                            <input class="inputContacto" type="text" value="Telefono" v-model="subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telefono';}"/>
+                            <span class="contact_sub">Email</span>
+                            <input class="inputContacto" type="text" value="Email" v-model="from_email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"/>
+                            <span class="contact_sub">Mensaje</span>
+                            <textarea class="inputContacto" value="Mensaje" v-model="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje';}">Mensaje..</textarea>
+                            <center><input @click="enviar" type="submit" value="Enviar" ></center>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+        </div>
+         
+    </div>
+</a>
+<!-- /CONTACTO -->
+<!--footer-->
+<div class="footer" id="footerGr">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-3 footer-grids text-center">
+				<img src="imagenes/logo/logo-sin-fondo.png"  height="120px" />				
+			</div>
+			<div class="col-3 footer-grids text-center">
+				<h3>Contactanos</h3>
+				<hr class="footer-line" />					
+				<ul>
+					<li>Tel 2804832617</li>
+					<li>Rawson, Chubut</li>
+				</ul>
+			</div>
+			<div class="col-3 footer-grids text-center">
+				<h3>Menu</h3>
+				<hr class="footer-line" />	
+				<ul>
+					<li><a href="#an_nosotros">Nosotros</a></li>
+					<li><a href="#an_productos">Productos</a></li>
+					<li><a href="#an_contacto">Contacto</a></li>
+				</ul>
+			</div>
+			<div class="col-3 footer-grids text-center">
+				<h3>Seguinos</h3>
+				<hr class="footer-line" />	
+				<ul  class="footer-enlinea">
+					<li><a href="https://api.whatsapp.com/send?phone=542804832617" target="_blank" rel="noreferrer noopener" aria-label="Whatsapp"><i class="fab fa-whatsapp logoRedSocial"></i></a></li>
+					<li><a href="https://www.facebook.com/donzhuka-104772555197050/" target="_blank" rel="noreferrer noopener" aria-label="Facebook"><i class="fab fa-facebook logoRedSocial" ></i></a></li>
+					<li><a href="https://www.instagram.com/donzhuka/" target="_blank" rel="noreferrer noopener" aria-label="Instagram"><i class="fab fa-instagram logoRedSocial"></i></a></li>						
+				</ul>
+			</div>
+			 
+		</div>
+	</div>
+</div>
+
+
+<div class="footer" id="footerMo" style="display: none;">
+    <table width="100%">
+        <tr><td align="center"><img src="imagenes/logo/logo-sin-fondo.png"  height="120px" /></td></tr>
+        <tr><td  align="center">
+            <a href="https://api.whatsapp.com/send?phone=542804832617" target="_blank" rel="noreferrer noopener" aria-label="Whatsapp"><i class="fab fa-whatsapp logoRedSocial"></i></a>
+			<a href="https://www.facebook.com/donzhuka-104772555197050/" target="_blank" rel="noreferrer noopener" aria-label="Facebook"><i class="fab fa-facebook logoRedSocial" ></i></a>
+			<a href="https://www.instagram.com/donzhuka/" target="_blank" rel="noreferrer noopener" aria-label="Instagram"><i class="fab fa-instagram logoRedSocial"></i></a>
+        </td></tr>
+        <tr><td align="center"><a href="#an_nosotros">Nosotros</a></td></tr>
+        <tr><td align="center"><a href="#an_productos">Productos</a></td></tr>
+        <tr><td align="center"><a href="#an_contacto">Contacto</a></td></tr>
+        <tr><td align="center">Tel 2804832617</td></tr>
+        <tr><td align="center">Rawson, Chubut</td></tr>
+    </table>
+
+</div>
+ 
+ 
+<!--//footer-->	
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script>
+    
+    // FUNCION DEL BOTON DE BUSQUEDA
+   
+    let btnBuscarProductos = document.querySelector('#btnBuscarProductos');
+    let inputBusqueda = document.querySelector('#buscador');
+    let busqueda = '';
+    btnBuscarProductos.addEventListener('click', (e) => {
+         e.preventDefault();
+         busqueda = inputBusqueda.value.toLowerCase();
+         window.location = `paginas/busqueda.html?busqueda=${busqueda}&catBusqueda=general`;
+    });
+   </script>
+
+<script src="./js/productos.js"></script>
+<script src="./js/funciones.js"></script>
+
+
+
+
+
+<!-- BUSCADOR --------------------------------------------->
+<script>
+    $(document).ready(function(){
+      $("#buscador").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+
+
+<!-- Mail -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">
+</script>
+<script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript">
+</script>
+<script>
+    (function(){
+        emailjs.init("user_C6p5JtfusXhDsomEY0NYu");
+     })();
+    const vue = new Vue({
+        el: '#app',
+        data(){
+            return {
+                from_name: '',
+                from_email: '',
+                message: '',
+                subject: '',
+            }
+        },
+        methods: {
+            enviar(){
+                let data = {
+                    from_name: this.from_name,
+                    from_email: this.from_email,
+                    message: this.message,
+                    subject: this.subject,
+                };
+                
+                emailjs.send("service_2bfkwbo","template_mf520kj", data)
+                .then(function(response) {
+                    if(response.text === 'OK'){
+                        alert('El correo se ha enviado de forma exitosa');
+                    }
+                   console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+                }, function(err) {
+                    alert('Ocurrió un problema al enviar el correo');
+                   console.log("FAILED. error=", err);
+                });
+            }
+        }
+    });
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-RXBFH5P44B"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-RXBFH5P44B');
+	</script>
+
+
+</body>
+
+</html>

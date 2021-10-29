@@ -1,0 +1,529 @@
+
+html, body{
+    font-size: 100%;
+	background:	#fff;
+	font-family: 'Poppins', sans-serif;
+	margin:0;
+}
+
+/****************************************/
+.logoNav{
+	padding-left: 10px;
+}
+
+.principal{
+	background-color:#F2F2F2;
+}
+
+.menu{
+	margin: 0;
+    background-color:#F2F2F2 !important;   
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.25); 
+}
+.nav-link{
+    color:#697172 !important;
+    padding:25px 30px !important;
+    font-size: 18px !important;
+	letter-spacing: 1px !important;    
+}
+.active  {
+	color: #58E3E4 !important;
+}
+
+/*titulos*/
+.titulo_q{
+	color: #040006;
+	 	 
+	font-family: 'Poppins' , sans-serif;
+	font-size: 32px;
+	font-style:normal;
+	font-weight: bold;
+	line-height: 48px;
+	letter-spacing: 0.005em;
+	text-align: left;
+		
+}
+.texto_q{	 
+	color: #040006;	 
+	font-family: 'Poppins' , sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600px;
+	line-height: 32px;
+	letter-spacing: 1.5px;
+	text-align: left;
+    
+}
+
+.texto_co{	 
+	color: #040006;	 
+	font-family: 'Poppins' , sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 180%;
+}
+/*titulos*/
+.conLink{
+	cursor: pointer;
+}
+.card-body{
+    background-color: #F2F2F2;
+}
+.btn{
+    border-color:#58E3E4;
+}
+.btn:hover{
+    border-color:#58E3E4;
+    background-color: #F2F2F2;
+    color: #040006;
+}
+/*-- contacto --*/
+.contact-top{
+	margin-top:2em;
+}
+
+.contact-top-left iframe{
+	width: 100%;
+	
+}
+.contact-textarea input[type="text"],.contact-textarea textarea {
+	width: 100%;
+	color: #999;
+	outline: none;
+	font-size: 14px;
+	padding: 18px 16px;
+	border: none;
+	margin-bottom: 1em;
+	-webkit-appearance: none;
+	background: none;
+	border: 1px solid #58E3E4;
+	border-radius: 4px;
+}
+.contact-textarea textarea {
+	resize: none;
+	min-height: 10em;
+}
+.contact-textarea input[type="submit"] {
+    border: none;
+	outline: none;
+	color: #fff;
+	background:#58E3E4;
+	width: 127px;
+    height: 61px;
+	padding: 15px 31px;
+	font-size: 18px;
+	-webkit-appearance: none;
+	font-family: 'Poppins', sans-serif;
+}
+.contact-textarea input[type="submit"]:hover{
+	background:#000;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+.contact_sub{
+    font-family: 'Poppins' , sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700px;
+    line-height: 18px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: #697172;
+
+}
+/*-- //contacto --*/
+
+
+/*--footer--*/
+.footer {
+    margin-top:2em;
+    padding:4em 0 3em;
+    background-color: #F2F2F2;
+  }
+  .footer h4 {
+      margin:0 0 .5em;
+  }
+  .footer-grids h4 a span{
+      font-size:14px;
+      color:#999;
+  }
+  .footer h3 {
+    font-family: 'Poppins' , sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 180%;
+  
+    
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+     
+    
+    color: #040006;
+  }
+  .footer-line{   
+    height: 1px;
+    background-color: #040006;
+  }
+ 
+ul.footer-enlinea li {
+    display: inline;
+}
+  .footer-grids ul li {
+    margin-bottom: 1em;      
+    list-style-type: none;
+
+    font-family: 'Poppins' , sans-serif;;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 180%;
+    /* identical to box height, or 29px */
+
+    letter-spacing: 0.5px;
+
+    /* negro onyx */
+
+    color: #040006;
+  }
+  .footer-grids ul li a {
+    color: #040006;
+    text-decoration: none;
+  }
+  .footer-grids ul li a:hover {
+    color: #58E3E4;
+  }
+  .footer-grids h4 a {
+      color:#040006;
+      font-size:2.3em;
+      text-decoration: none;
+  }
+  .footer-grids p {
+      color: #868686;
+      font-size:14px;
+      line-height: 1.8em;
+      margin:0;
+  }
+  .footer-bottom {
+      background-color: #201F1F;
+      padding: 2em 0;
+      text-align: center;
+  }
+  .footer-bottom p {
+      color: #868686;
+      margin:0;
+      font-size: 14px;
+  }
+  .footer-bottom p a{
+      color:#040006;
+  }
+  .footer-bottom p a:hover{
+      color: #868686;
+  }
+
+ .footer td , a{
+	 text-decoration: none;
+	 color: #040006;
+    font-size:14px;
+    line-height: 1.8em;
+    margin:0;
+	padding-bottom: 10px; 
+
+ } 
+ .footer a:hover{
+	color: #58E3E4;
+} 
+    
+.logoRedSocial {
+    display: inline-block;
+    font-size: 2rem;
+    background-color:#F2F2F2;
+    color: #040006;
+    
+    padding-top: 1rem;
+  }
+  
+  .logoRedSocial a {
+    text-decoration: none;
+    background-color: #F2F2F2;
+    color:#040006;
+ }
+  
+  .logoRedSocial:hover {
+    background: #F2F2F2;
+    color: #58E3E4;
+ }
+/*--//footer--*/
+
+.welcome{
+    margin-top: 0.5rem;
+}
+.welcome p{
+	font-size: 14px;
+    color: #F2F2F2;
+    margin: 1em auto 0em;
+    line-height: 1.8em;
+    text-align: center;
+    width: 60%;
+}
+.welcome-titulo{
+    font-family: 'Poppins' , sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;     
+    color: #040006; 
+    
+    
+    
+}
+
+.services-grd{
+	padding: 2em 1em;
+    text-align: center;
+    background-color:#F2F2F2;
+	box-shadow:-3px -4px 6px #F1F1F1;
+	-webkit-box-shadow:-3px -4px 6px #F1F1F1;
+	-moz-box-shadow:-3px -4px 6px #F1F1F1;
+	-o-box-shadow:-3px -4px 6px #F1F1F1;
+	-ms-box-shadow:-3px -4px 6px #F1F1F1;
+}
+.services-grd h4{
+	text-transform:capitalize;
+	font-size:1.1em;
+	color:#F5D8B3;
+    font-weight: 300px;
+    letter-spacing: 2px;
+	margin:0;
+}
+.services-grd p{
+    position: absolute;
+	margin:1em 0;
+	color:#fff;
+	font-size:14px;
+	line-height:1.8em;
+}
+
+.img-categorias{
+    border-radius: 5px;
+}
+
+.welcome-vermas{
+    background: #58E3E4;
+    border-radius: 5px;     
+    
+    font-family: 'Poppins' , sans-serif;;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;    
+
+    color: #FFFFFF;
+ 
+    padding: 1em 1em; 
+
+    position:absolute; 
+	margin-left: 32%;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+ 
+.subtext_banner1{
+	position: absolute;
+	width: 280px;
+	height: 30px;
+	left: 18%;
+	top: calc(50% - 30px/2 - 93px);
+
+	/* Heading 3 */
+	font-family: 'Poppins' , sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 150%;
+	/* identical to box height, or 30px */
+
+	letter-spacing: 0.5px;
+
+	/* --c-gray */
+	color: #72757E;
+}
+.text_banner1{
+	/* Title */
+	position: absolute;
+	width: 600px;
+	height: 96px;
+	left: 18%;
+	top: calc(50% - 96px/2 - 22px);
+
+	/* Heading 1 */
+
+	font-family: 'Poppins' , sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 150%;
+	/* or 48px */
+
+	letter-spacing: 0.005em;
+
+	/* --c-text */
+
+	color: #1D1F22;
+}
+.link_banner1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 16px 32px;
+
+	position: static;
+	width: 166px;
+	height: 61px;
+	left: 80px;
+	top: -4.5px;
+
+	/* turquesa */
+
+	background: #58E3E4;
+	border-radius: 5px;
+
+	/* Inside Auto Layout */
+
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+	margin:20px 0px;
+}
+.label_banner1{
+	/* Label */
+	position: static;
+	width: 102px;
+	height: 29px;
+	left: calc(50% - 102px/2);
+	top: calc(50% - 29px/2);
+
+	/* Button */
+
+	font-family: 'Poppins' , sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 180%;
+	/* identical to box height, or 29px */
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+
+	/* Blanco */
+
+	color: #FFFFFF;
+}
+
+.carousel-indicators .active{
+	background: #58E3E4 !important;
+	border-radius: 5px !important;
+}
+.carousel-indicators button{
+	background: #72757E !important;
+	border-radius: 4px !important;
+}
+/*banner*/
+ 
+/****************/
+.about{
+	padding-top: 2rem; 
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
+
+@media (max-width:767px){
+	
+	#footerGr, #bannerPrincipalGr{
+		display: none  !important;
+	}
+
+	#footerMo{
+		display: block !important;
+	}
+
+	#logoZhuka{
+		height:60px !important;
+	}
+
+	.nav{
+		background-color: #FFF !important;
+	}
+
+	#remeraNosotros{
+		width:inherit;
+	}
+
+	.about{ 
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	
+
+	/*banner*/	
+	.subtext_banner1{
+		left: 12%;
+		top: 12%; 
+		font-size: 10px;
+	}
+	.text_banner1{
+		left: 12%;
+		top: 14%;
+		width: 160px;
+		font-size: 13px;
+	}
+	.link_banner1{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 16px 32px;
+	
+		position: static;
+		width: 126px;
+		height: 31px;
+		left: 80px;
+		top: -4.5px;
+	
+		/* turquesa */
+	
+		background: #58E3E4;
+		border-radius: 5px;
+	
+		/* Inside Auto Layout */
+	
+		flex: none;
+		order: 0;
+		align-self: stretch;
+		flex-grow: 0;
+		margin:20px 0px;
+	}
+	.label_banner1{
+		/* Label */
+		position: static;
+		width: 72px;
+		height: 4px;
+		left: 0px;
+		top: 0px;
+		font-size: 12px; 
+		  
+	}
+	/*banner*/
+	.titulo_q, .texto_q {
+		font-size: 12px;
+	} 
+	.welcome-vermas{
+		display: none;
+	}
+}   

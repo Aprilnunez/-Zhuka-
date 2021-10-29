@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                EmailJS!
+            </title>
+        </meta>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <a name="an_contacto">
+            <div class="about" style="padding-top: 6rem;">
+                <div class="container-fluid">	             		
+                    <div class="contact-main row contact-top">
+                        <div class="col-sm-12 col-md-6  contact-top-left">
+                            <div>	
+                                <div> 
+                                    <div class="titulo_q">Contactanos</div>
+                                </div>	
+                                <div style="padding-top: 3rem; padding-left: 1rem;"> 
+                                    <div class="texto_co">Contacto: Whatssap : 2804832617</div>
+                                </div>	
+                                <div style="padding-left: 1rem;">  
+                                    <div class="texto_co">Direccion: Rawson, Chubut, Argentina</div>
+                                </div>	
+                                <div style="padding-top: 3rem;"> 
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23229.913007916002!2d-65.12064374911157!3d-43.29878458123036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe01571fc31a9637%3A0x57c6b22b6483050c!2sRawson%2C%20Chubut!5e0!3m2!1ses-419!2sar!4v1631025002882!5m2!1ses-419!2sar" width="340" height="320" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>	
+                            </div>	
+                        </div>
+                        <div id="app" class="col-sm-12 col-md-6  contact-top-right">
+                            <div class="contact-textarea">
+                                <form>
+                                    <span class="contact_sub" >Nombre y Apellido</span>
+                                    <input class="inputContacto" type="text" value="Nombre" v-model="from_name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Nombre';}"/>
+                                    <span class="contact_sub">Tel&eacute;fono</span>
+                                    <input class="inputContacto" type="text" value="Telefono" v-model="subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Telefono';}"/>
+                                    <span class="contact_sub">Email</span>
+                                    <input class="inputContacto" type="text" value="Email" v-model="from_email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"/>
+                                    <span class="contact_sub">Mensaje</span>
+                                    <textarea class="inputContacto" value="Mensaje" v-model="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mensaje';}">Mensaje..</textarea>
+                                    <center><input @click="enviar" type="submit" value="Enviar" ></center>
+                                </form>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                 
+            </div>
+        </a>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">
+        </script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript">
+        </script>
+        <script>
+            (function(){
+                emailjs.init("user_C6p5JtfusXhDsomEY0NYu");
+             })();
+            const vue = new Vue({
+                el: '#app',
+                data(){
+                    return {
+                        from_name: '',
+                        from_email: '',
+                        message: '',
+                        subject: '',
+                    }
+                },
+                methods: {
+                    enviar(){
+                        let data = {
+                            from_name: this.from_name,
+                            from_email: this.from_email,
+                            message: this.message,
+                            subject: this.subject,
+                        };
+                        
+                        emailjs.send("service_2bfkwbo","template_mf520kj", data)
+                        .then(function(response) {
+                            if(response.text === 'OK'){
+                                alert('El correo se ha enviado de forma exitosa');
+                            }
+                           console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+                        }, function(err) {
+                            alert('Ocurrió un problema al enviar el correo');
+                           console.log("FAILED. error=", err);
+                        });
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
