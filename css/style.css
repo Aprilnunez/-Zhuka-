@@ -445,12 +445,12 @@ p.nulla{
 	position: relative;
 	overflow: hidden;
 }
-.wmuSlider .wmuSliderWrapper article img {
+/* .wmuSlider .wmuSliderWrapper article img {
 	/*--max-width: 100%;
 	width: auto;
 	height: auto;
 	display:block;--*/
-}
+
 /* Default Skin */
 .wmuSliderPagination {
 	z-index: 2;

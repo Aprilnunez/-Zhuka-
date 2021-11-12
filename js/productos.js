@@ -99,26 +99,6 @@ const productos = [
    },
 
    {
-      id:"6",
-      categoria: "Remeras",
-      nombre:"Remera Goku",
-      precio: 2200,
-      color: [ 
-         {color: "Negro",codigo:'#000'}, 
-         {color: "Gris",codigo:'gray'}, 
-         {color: "Blanco",codigo:'#fff'}
-      ],
-      talla:[
-         "S",
-         "M",
-         "L",
-         "XL",
-         "XXL",
-      ],
-      imagen:"../imagenes/buzo_blanquito.jpg"
-   },
-
-   {
       id:"7",
       categoria: "Remeras",
       nombre:"Remera Haku",
